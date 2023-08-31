@@ -167,8 +167,12 @@ def main():
                 print("No se ha podido eliminar la mascota")
         
         elif menu==6:
-            print("Usted ha salido del sistema de servicio de hospitalización...")
-            break
+            j= int(input("desea salir del sistema? digite 1. para salir y 2. para continuar"))
+            if j == 1:
+                print ("Usted ha salido del sistema de servicio de hospitalización...")
+                break
+            else:
+                continue    
         
         else:
             print("Usted ingresó una opción no válida, intentelo nuevamente...")
